@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music live</title>
+    <style>
+       
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            position: relative; /* Adicionado */
+        }
+
+        header {
+            background-color: #050318;
+            color: #ededed;
+            text-align: left;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: -60px;
+        }
+
+        main {
+            padding: 20px;
+            flex: 1;
+        }
+
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: left;
+            background-color: #0d0c1c;
+            padding: 1em;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 1em;
+            font-size: 1em;
+            transition: color 0.5s;
+        }
+
+        nav a:hover {
+            color: #c5c0c0;
+        }
+
+        section {
+            padding: 2em;
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .sales-section,
+        .blog-section,
+        .discover-section,
+        .artists-section {
+            background-color: #ecf0f1;
+        }
+
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin: 1em 0;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            border: 1px solid #808080;
+            border-radius: 25px;
+            width: 438px;
+            font-size: 16px;
+        }
+
+        .botaoiniciar {
+            background-color: #ffffff;
+            width: 120px;
+            position: absolute; /* Adicionado */
+            top: 72%; /* Adicionado */
+            left: 73%; /* Adicionado */
+            transform: translate(-50%, -50%); /* Adicionado */
+            z-index: 2; /* Adicionado */
+            color: #050318;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: color 0.6s;
+        }
+
+        .botaoiniciar:hover {
+            background-color: #1b1b7e;
+            color: #ffffff;
+            transition: color 0.6s;
+        }
+
+        .botaobuscar {
+            margin-left: 20px;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.4s;
+        }
+
+        .botaobuscar:hover{
+            background-color: #1b1b7e;
+            transition: 0.4s;
+        }
+
+        .login-button {
+            margin-left: 20px;
+            margin-top: 70px;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.4s;
+        }
+
+        .login-button:hover{
+            background-color: #1b1b7e;
+            transition: 0.4s;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+            margin-right: -78px;
+        }
+
+        .perfil {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 20px;
+        }
+
+        .musiclive {
+            margin-top: 70px;
+            width: 90px;
+            height: 120px;
+        }
+
+        
+
+        .box-edita {
+            width: 100px;
+            height: 100px;
+            margin-left: 1630px;
+            margin-top: 70px;
+        }
+
+        
+
+        a {
+            color: #ffffff; 
+            text-decoration: none; 
+            cursor: pointer; 
+        }
+
+        a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        
+        .imagemprincipal {
+            margin-left: 160px;
+            width: 1471px;
+            height: 544px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="musiclive.png" alt="logo" class="musiclive">
+        </div>
+        
+        <div class="box-edita">
+            <img src="perfil.png" alt="icone perfil" class="perfil">
+            <a href="editarperfil.php">
+                <label class="editaperfil">Editar Perfis</label>
+            </a>
+        </div>
+
+        <a href="login2.php">
+            <button class="login-button">Login</button>
+        </a>
+    </header>
+
+    <nav>
+        <a href="listar.php">Mostrar usuários próximos</a>
+        <a href="listar2.php">Estilos próximos</a>
+        <a href="editarteste.php">Editar teste</a>
+        <a href="#artists">Blog</a>
+    </nav>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Procure por tópicos...">
+        <button type="button" class="botaobuscar">Buscar</button>
+    </div>
+
+    <main>
+        
+        <div class="boxpricipal">
+
+            <a href="inserirmusicas.php">
+                <button class="botaoiniciar">Iniciar</button>
+            </a>
+
+            <div>
+                <img src="boxprincipal.png" alt="imagemprincipal" class="imagemprincipal">
+            </div>
+        </div>
+    </main>
+    <br><br>
+
+    <footer>
+        <p>&copy; direitos reservados a Thiago the best</p>
+    </footer>
+
+</body>
+</html>
